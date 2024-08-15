@@ -32,3 +32,28 @@ const myFunction = function(){
     
 }
 console.log(myFunction);
+
+
+
+// ******************Stack and Heap memory*******************
+
+// stack(primitive)---->variable's copy  heap(non primitive)---->refernce
+let myYoutubeName = "LavaTheAjeebBlogger" 
+
+let anotherName = myYoutubeName ; 
+anotherName = "new name"
+console.log(myYoutubeName);
+console.log(anotherName);
+
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl" 
+}
+let userTwo = userOne 
+ 
+userTwo.email = "qwertyui@google.com"
+console.log(userOne);
+console.log(userTwo);
+
+
